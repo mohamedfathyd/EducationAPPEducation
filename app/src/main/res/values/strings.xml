@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">WAW</string>
+    <string name="hint_name">الأسم</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">رقم الجوال</string>
+    <string name="hint_address"> البريد الألكترونى</string>
+    <string name="hint_password">كلمة المرور</string>
+    <string name="hint_confirm_password">تأكيد كلمة المرور</string>
+    <string name="text_login">تسجيل الدخول</string>
+    <string name="text_register">انشاء حساب</string>
+    <string name="error_message_name">Enter Full Name</string>
+    <string name="error_message_email">Enter Valid Email</string>
+    <string name="error_message_age">Enter Age</string>
+    <string name="error_message_password">Enter Password</string>
+    <string name="success_message">Registration Successful</string>
+    <string name="text_not_member">لأنشاء حساب جديد ؟ اضغط للأنشاء</string>
+</resources>

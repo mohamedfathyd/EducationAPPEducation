@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backa"
+    android:layoutDirection="ltr"
+    >
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/colorPrimaryDark"
+        local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        local:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="قائمة طلباتك المحدده"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:layout_below="@+id/app_bar"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_margin="15dp"
+            android:id="@+id/num_kilo"
+
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:text=" الاسم :"
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:editable="false"
+                android:id="@+id/name"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/rounded_edittext"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:id="@+id/total_view"
+            android:layout_below="@id/num_kilo"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="العنوان :"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/title"
+                android:gravity="center"
+                android:text=""
+                android:maxLines="3"
+                android:textColor="#000000"
+                android:textSize="13dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rounded_edittext"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:id="@+id/phone"
+            android:layout_below="@id/total_view"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="رقم الجوال :"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/phonee"
+                android:editable="false"
+                android:gravity="center"
+                android:inputType="phone"
+                android:textColor="#000000"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rounded_edittext"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:id="@+id/phoneeee"
+            android:layout_below="@id/phone"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="المبلغ الكلي :"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/price"
+                android:editable="false"
+                android:gravity="center"
+
+                android:textColor="#000000"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rounded_edittext"
+                />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phoneeee"
+            android:scrollbars="vertical"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_edittext_t"
+            android:layout_above="@+id/aaa"
+            android:id="@+id/review"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/aaa"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape2"
+                    android:textSize="20dp"
+                    android:layout_margin="5dp"
+                    android:textColor="#ffffff"
+                    android:id="@+id/getfinal"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="تأكيد" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape2"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:id="@+id/delete"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="مسح المنتجات" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

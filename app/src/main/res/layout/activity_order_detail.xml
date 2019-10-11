@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layoutDirection="ltr"
+    >
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/colorPrimaryDark"
+        local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        local:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="تفاصيل الطلب"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:layout_below="@+id/app_bar"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_margin="15dp"
+            android:id="@+id/num_kilo"
+
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content"
+                android:text=" الاسم :"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:editable="false"
+                android:id="@+id/name"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/rounded_edittext"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:id="@+id/total_view"
+            android:layout_below="@id/num_kilo"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="العنوان :"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/address"
+                android:gravity="center"
+
+                android:maxLines="3"
+                android:textColor="#000000"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rounded_edittext"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:id="@+id/phonee"
+            android:layout_below="@id/total_view"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="رقم الهاتف :"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/phone"
+                android:editable="false"
+                android:gravity="center"
+                android:inputType="phone"
+                android:textColor="#000000"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rounded_edittext"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:id="@+id/phoneee"
+            android:layout_below="@id/phonee"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="طريقة الشحن :"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/charge"
+                android:editable="false"
+                android:gravity="center"
+                android:inputType="phone"
+                android:textColor="#000000"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rounded_edittext"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:id="@+id/pho"
+            android:layout_below="@id/phoneee"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="السعر الكلي  :"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/price"
+                android:editable="false"
+                android:gravity="center"
+                android:inputType="phone"
+                android:textColor="#000000"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rounded_edittext"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pho"
+            android:scrollbars="vertical"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_edittext_t"
+            android:layout_above="@+id/aaa"
+            android:id="@+id/details"
+            >
+
+        </TextView>
+
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backa"
+
+    android:layoutDirection="ltr">
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/colorPrimaryDark"
+        local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        local:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="Education"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_below="@+id/app_bar"
+
+        tools:layout_editor_absoluteY="102dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="5"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="3"
+                    android:orientation="vertical"
+                    >
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_margin="20dp"
+                        android:padding="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@drawable/shape"
+                        android:scrollbars="vertical"
+                        android:layout_weight="3"
+                        android:id="@+id/recyclerview2"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/img"
+                        app:reverseLayout="true"
+                        >
+
+                    </android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:scrollbars="vertical"
+                android:padding="20dp"
+                android:layout_weight="3.2"
+                android:id="@+id/recyclerview"
+                android:layout_gravity="center"
+                android:layout_below="@+id/vie"
+                app:reverseLayout="true"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".3"
+                android:layout_gravity="center"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape2"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:id="@+id/myorder"
+                    android:textSize="19dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="طلباتي"
+                    />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:background="@drawable/shape"
+                android:layout_weight="1"
+                android:layoutDirection="rtl"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="من نحن"
+                    android:textSize="14dp"
+                    android:id="@+id/whous"
+                    android:background="@drawable/shape2"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="اتصل بنا"
+                    android:background="@drawable/shape2"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp"
+                    android:id="@+id/callus"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="البري السعودي"
+                    android:background="@drawable/shape2"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp"
+                    android:id="@+id/bared"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="ارامكس"
+                    android:background="@drawable/shape2"
+                    android:textColor="#ffffff"
+                    android:id="@+id/aramix"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar_subject"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="false"
+        android:visibility="visible" />
+
+</RelativeLayout>

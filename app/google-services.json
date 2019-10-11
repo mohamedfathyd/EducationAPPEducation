@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1067412794725",
+    "firebase_url": "https://educationapp-f3bca.firebaseio.com",
+    "project_id": "educationapp-f3bca",
+    "storage_bucket": "educationapp-f3bca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067412794725:android:a42d0447d330350b",
+        "android_client_info": {
+          "package_name": "com.khalej.educationapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1067412794725-mbrggpve6evqemh0833769fieo5ocvos.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.khalej.educationapp",
+            "certificate_hash": "22fd65c93727d47d3cf5938ca60e08c55096fe37"
+          }
+        },
+        {
+          "client_id": "1067412794725-fvg3vg808u936ledh1q1rt54u02is53l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY9vWfq97riPL3aS6_7QSjdreOVf1U3rg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1067412794725-fvg3vg808u936ledh1q1rt54u02is53l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
